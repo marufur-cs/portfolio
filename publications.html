@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title if title else "Mohammad M. Rahman" }}</title>
+    <link rel="stylesheet" href="static/publication.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: #000;">Mohammad Marufur Rahman</h1>
+        <hr>
+        <nav>
+            <!-- Home -->
+                <a href="index.html" class="nav-link">Home</a>
+
+                <!-- Publications -->
+                <a href="publications.html" class="nav-link active">Publications</a>
+
+                <!-- CV (PDF file in static folder) -->
+                <a href="static/cv/CV_MMR.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link">
+                CV
+                </a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <div class="publications">
+            <div class="pub">
+                <div class="text-box">
+                    <p>
+                        <b>[2025] Communication Lower Bounds and Algorithms for Sketching with Random Dense Matrices</b>
+                        <br>
+                        Hussam Al Daas, Grey Ballard, Laura Grigori, Md Taufique Hussain, Suraj Kumar, <u>Mohammad Marufur Rahman</u>, Kathryn Rouse
+                        <br>
+                        This paper addresses the communication bottlenecks of sketching large matrices in distributed-memory environments. The authors establish communication lower bounds, prove their tightness with optimal algorithms, and extend these bounds to Nyström approximation. Evaluations on CPU/GPU supercomputers demonstrate the scalability of their proposed parallel strategies.
+                        <br>
+                        <b style="color: brown;">Paper link: </b><a href="https://arxiv.org/abs/2603.20966" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2603.20966</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="pub">
+                <div class="text-box">
+                    <p>
+                        <b>[2025] Catastrophic Forgetting in Kolmogorov-Arnold Networks</b>
+                        <br>
+                        <u>Mohammad Marufur Rahman</u>, Guanchu Wang, Kaixiong Zhou, Minghan Chen, Fan Yang
+                        <br><i style="font-family:Arial, Helvetica, sans-serif; color: rgb(4, 146, 61);">Published in AAAI 2026</i>
+                        <br>
+                        This study evaluates KANs for continual learning. While KANs resist forgetting in low-dimensional, algorithmic tasks due to localized activations, they remain vulnerable in high-dimensional domains like vision and language. The authors introduce KAN-LoRA to improve fine-tuning and provide a theoretical framework linking forgetting to activation overlap.
+                        <br>
+                        <b style="color: brown;">Paper link: </b><a href="https://arxiv.org/abs/2511.12828" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2511.12828</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+    

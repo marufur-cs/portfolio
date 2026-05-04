@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+header {
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: fantasy;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+header hr {
+    border: 0;
+    height: 1px;
+    /* background: #3e3838; */
+    background: linear-gradient(to right, transparent, #4e4b4b, transparent);
+    margin: 0 10%;
+}
+header nav {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    /* font-family: cursive; */
+    font-family: fantasy;
+    font-size: large;
+}
+header nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 15px;
+    text-decoration: wavy;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: chocolate;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: rgb(160, 62, 49);
+}
+
+main {
+    padding: 1%;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: fantasy;
+}
+
+/* Contact Me */
+/* Contact section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 40px 20px;
+}
+
+.contact-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Fade line under title */
+.fade-line {
+  border: 0;
+  height: 2px;
+  width: 80%;
+  margin: 10px auto 30px auto;
+  background: linear-gradient(to right, transparent, #000, transparent);
+}
+
+/* Contact items */
+
+.contact-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 700px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Decorative fade line */
+.fade-line {
+  border: 0;
+  height: 2px;
+  width: 80%;
+  margin: 10px auto 30px auto;
+  background: linear-gradient(to right, transparent, #000, transparent);
+}
+
+/* Contact info styling */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+}
+
+/* Address styling */
+.address h4,
+.email-cell h4 {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+.address p,
+.email-cell p {
+  margin: 0;
+  color: #555;
+}
+
+/* Email + Phone side by side */
+.email-cell {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.email-cell div {
+  flex: 1;
+}
+
+.email-cell a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.email-cell a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .email-cell {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
