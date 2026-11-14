@@ -58,7 +58,7 @@ main {
       align-items: top;      /* vertically center */
       justify-content: space-between;
       gap: 2%;                /* space between image and text */
-      max-width: 50%;
+      max-width: 70%;
       margin: 0px auto;
     }
 
