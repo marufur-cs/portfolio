@@ -97,9 +97,10 @@ footer {
 }
 
 .exp-logo {
-    flex: 0 0 64px;
-    width: 64px;
-    height: 64px;
+    flex: 0 0 8%;
+    width: 8%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
 }
 
@@ -109,10 +110,4 @@ footer {
         max-width: 92%;
     }
 
-    .exp-logo {
-        flex-basis: 52px;
-        width: 52px;
-        height: 52px;
-    }
 }
-
