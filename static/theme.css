@@ -1,0 +1,113 @@
+:root {
+    --page-background: #ffffff;
+    --surface-background: #ffffff;
+    --text-color: #000000;
+    --heading-color: #333333;
+    --border-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --link-color: #000000;
+    --accent-color: rgb(160, 62, 49);
+    --muted-accent-color: brown;
+}
+
+:root[data-theme="dark"] {
+    --page-background: #121212;
+    --surface-background: #1e1e1e;
+    --text-color: #f1f1f1;
+    --heading-color: #ffffff;
+    --border-color: #383838;
+    --shadow-color: rgba(0, 0, 0, 0.45);
+    --link-color: #f1f1f1;
+    --accent-color: #e58b78;
+    --muted-accent-color: #e6a78f;
+}
+
+html {
+    color-scheme: light;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+body {
+    background: var(--page-background);
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header,
+.aboutme .text-box,
+.aboutme .news,
+.exp,
+.pub {
+    background: var(--surface-background);
+}
+
+header h1,
+.aboutme h2 {
+    color: var(--heading-color) !important;
+}
+
+header nav a,
+.aboutme p,
+.aboutme li,
+.info,
+.text-box p {
+    color: var(--text-color);
+}
+
+.aboutme .text-box,
+.aboutme .news,
+.exp,
+.pub {
+    border-color: var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+header nav a {
+    color: var(--link-color);
+}
+
+nav a.active {
+    color: var(--accent-color);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 7px 13px;
+    background: var(--surface-background);
+    color: var(--text-color);
+    cursor: pointer;
+    font: inherit;
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-color);
+}
+
+.theme-icon {
+    margin-right: 4px;
+}
+
+@media (max-width: 600px) {
+    .theme-toggle {
+        top: 10px;
+        right: 10px;
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+.publications .text-box b[style*="brown"] {
+    color: var(--muted-accent-color) !important;
+}
+
+.publications .text-box i {
+    color: rgb(4, 146, 61) !important;
+}

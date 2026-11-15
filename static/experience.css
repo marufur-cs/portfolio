@@ -92,7 +92,27 @@ footer {
 
 }
 
+.text-box {
+    flex: 1;
+}
+
+.exp-logo {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
 
 
+@media (max-width: 600px) {
+    .exp {
+        max-width: 92%;
+    }
 
+    .exp-logo {
+        flex-basis: 52px;
+        width: 52px;
+        height: 52px;
+    }
+}
 
