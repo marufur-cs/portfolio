@@ -36,6 +36,44 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.exp,
+.pub,
+.aboutme .text-box,
+.aboutme .news {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease;
+}
+
+.exp:hover,
+.pub:hover,
+.aboutme .text-box:hover,
+.aboutme .news:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px var(--shadow-color);
+}
+
+.exp-logo {
+    transition: transform 0.3s ease;
+}
+
+.exp:hover .exp-logo {
+    transform: scale(1.08) rotate(3deg);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.55s ease var(--reveal-delay), transform 0.55s ease var(--reveal-delay);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal.is-visible:hover {
+    transform: translateY(-5px);
+}
+
 header,
 .aboutme .text-box,
 .aboutme .news,
@@ -110,4 +148,20 @@ nav a.active {
 
 .publications .text-box i {
     color: rgb(4, 146, 61) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
 }
